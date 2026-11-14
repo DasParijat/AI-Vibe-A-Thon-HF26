@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a51c30">
+  <meta name="description" content="Course-based software setup guides for Marist computer science students.">
+  <title>Launchpad | Marist CS setup guides</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="guides.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#courses"><span class="brand-mark">&lt;/&gt;</span><span>launchpad<span class="brand-sub">MARIST UNIVERSITY</span></span></a>
+    <div class="sidebar-label">YOUR WORKSPACE</div>
+    <nav aria-label="Main navigation">
+      <a href="#courses" data-nav="courses" class="active"><span>▦</span> Course guides <span class="nav-count">3</span></a>
+      <a href="#toolkit" data-nav="toolkit"><span>⌘</span> Software toolkit</a>
+      <a href="#progress" data-nav="progress"><span>◷</span> My progress</a>
+      <a href="#help" data-nav="help"><span>?</span> Help & resources</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="tiny-dot"></span> A little setup. A lot of possibility.<p>Built for the next thing you’ll create.</p><div class="university">M<span>MARIST<br>UNIVERSITY</span></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>Computer Science <span class="slash">/</span> <span id="breadcrumb">Course guides</span></span><span class="student-badge"><span class="tiny-dot"></span> The student setup companion</span></header>
+    <main id="main" tabindex="-1">
+      <section id="home-view">
+        <div class="hero">
+          <div class="hero-copy"><div class="eyebrow">LESS CONFIGURING. MORE CREATING.</div><h1>Your next class.<br>Your setup, <span>sorted.</span></h1><p>From your first line of Python to your first game.<br>Get the tools you need, one clear step at a time.</p><a class="button primary" href="#course/intro">Set up your first course <span>↗</span></a><div class="hero-note"><span>✓</span> Free tools <span>✓</span> Step-by-step guides <span>✓</span> Made for Marist</div></div>
+          <div class="terminal" aria-label="Illustration of a ready programming environment"><div class="terminal-bar"><div class="lights"><i></i><i></i><i></i></div><span>your-next-big-thing</span><span>⌘</span></div><div class="terminal-content"><p><span class="muted">01</span> <span class="pink">from</span> marist <span class="pink">import</span> possibilities</p><p><span class="muted">02</span></p><p><span class="muted">03</span> <span class="pink">def</span> <span class="yellow">start_something</span>():</p><p><span class="muted">04</span> &nbsp; tools = <span class="green">"ready"</span></p><p><span class="muted">05</span> &nbsp; ideas = <span class="green">"unlimited"</span></p><p><span class="muted">06</span> &nbsp; <span class="pink">return</span> your_next_chapter</p><p class="terminal-result"><span class="green">❯</span> Environment ready. Let’s build.<span class="cursor">▍</span></p></div><div class="ready-pill"><span class="tiny-dot"></span> You’re ready for day one.</div></div>
+        </div>
+        <div class="section-title"><div><div class="eyebrow">START WITH YOUR SYLLABUS</div><h2>Find your course</h2><p>Pick a class. We’ll take care of the getting-started part.</p></div><label class="os-picker">I’m using <select id="os-select" aria-label="Operating system"><option value="windows">Windows</option><option value="macos">macOS</option><option value="linux">Linux (Ubuntu)</option></select></label></div>
+        <div class="catalog-controls"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search courses, languages, or tools…" aria-label="Search courses, languages, or tools"><kbd>/</kbd></label><div class="filters" role="group" aria-label="Course category"><button class="selected" data-filter="all" aria-pressed="true">All courses</button><button data-filter="foundations" aria-pressed="false">Foundations</button><button data-filter="development" aria-pressed="false">Development</button><button data-filter="games" aria-pressed="false">Game design</button></div></div>
+        <div id="course-grid" class="course-grid" aria-live="polite"></div>
+        <div class="bottom-note"><span class="note-icon">i</span><div><strong>Your syllabus comes first.</strong><p>These are suggested setups, including the Python and SFML examples. Confirm required tools and versions with your instructor before installing.</p></div><a href="#help">Good to know ↗</a></div>
+      </section>
+      <section id="detail-view" hidden></section>
+      <section id="other-view" hidden></section>
+      <footer><span>launchpad <span class="footer-dot">·</span> A head start for every Red Fox.</span><span>Independent student resource <span class="footer-dot">·</span> <a href="#help">Sources & support ↗</a></span></footer>
+    </main>
+  </div>
+  <dialog id="guide-dialog" aria-labelledby="guide-title"><div id="guide-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
